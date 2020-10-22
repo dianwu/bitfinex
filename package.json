@@ -1,0 +1,21 @@
+{
+  "name": "line_chatbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docker:build": "docker build -t dian/node-line-bot .",
+    "docker:run": "docker run -p 3000:3000 -p 3001:3001 -v /etc/stunnel:/etc/stunnel:ro -d -it dian/node-line-bot"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@line/bot-sdk": "^6.8.4",
+    "bitfinex-api-node": "^4.0.13",
+    "express": "^4.17.1",
+    "forever-monitor": "^2.0.0",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  }
+}

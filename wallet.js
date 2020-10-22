@@ -1,0 +1,1 @@
+[0,"ws",[["exchange","SAN",19.76,0,null,null,null]]]
